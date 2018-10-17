@@ -23,6 +23,7 @@ function fuzzyMatch(arr, str) {
 
 function matchName(arr, str) {
   result={};
+  obj2={};
   for (const key in arr) {
     if(arr[key].name === str){
       let obj2 = Object.assign(result, arr[key]);
