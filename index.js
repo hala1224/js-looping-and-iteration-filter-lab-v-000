@@ -22,13 +22,21 @@ function fuzzyMatch(arr, str) {
 }
 
 function matchName(arr, str) {
-  result={};
-  obj2={};
+  
+  myArr=[];
+   let count=0;
+  
   for (const key in arr) {
-    if(arr[key].name === str){
-      let obj2 = Object.assign(result, arr[key]);
+
+    if(arr[key].name===str){
+    
+       myArr[count]=arr[key];
+      
+      count+=1;
     }
-    console.log(obj2);
+      
   }
-  // return result;
+   
+   return myArr;
 }
+  
