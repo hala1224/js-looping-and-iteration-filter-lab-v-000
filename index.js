@@ -25,8 +25,9 @@ function matchName(arr, str) {
   result={};
   for (const key in arr) {
     if(arr[key]===str){
-      result << arr[key];
+      let obj2 = Object.assign(result, arr[key]);
     }
+    console.log(obj2);
   }
-  return result;
+  // return result;
 }
